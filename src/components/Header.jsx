@@ -10,16 +10,6 @@ export default function Header({ darkMode, toggleDarkMode }) {
       darkMode ? 'bg-[#2d1b4e]' : 'bg-white'
     }`}>
       <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 lg:gap-8">
-        {/* Profile Image */}
-        <div className="shrink-0 mx-auto sm:mx-0">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gray-200 overflow-hidden">
-            <img 
-              src="src/assets/resume pic.jpg" 
-              alt="Charlie Martinez"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
 
         {/* Header Info */}
         <div className="flex-1 w-full">
@@ -39,7 +29,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
               <p className={`text-sm sm:text-base transition-colors ${
                 darkMode ? 'text-gray-300' : 'text-neutral-700'
               }`}>
-                BSIT Student - Major in Business Informatics
+                Software Developer / Aspiring Data Analyst
               </p>
             </div>
             
@@ -62,17 +52,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
           </div>
           
           <div className="flex justify-center sm:justify-start">
-            <button 
-              onClick={handleEmailClick}
-              className={`px-6 sm:px-8 py-2.5 rounded-lg flex items-center justify-center gap-2 transition-colors ${
-                darkMode 
-                  ? 'bg-purple-600 hover:bg-purple-700 text-white' 
-                  : 'bg-purple-700 hover:bg-purple-800 text-white'
-              }`}
-            >
-              <Mail className="w-4 h-4" />
-              Send Email
-            </button>
+            
           </div>
         </div>
       </div>
