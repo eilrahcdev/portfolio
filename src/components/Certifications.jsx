@@ -2,8 +2,7 @@ import { FileBadge } from "lucide-react";
 
 export default function Certifications({ darkMode }) {
   const certifications = [
-    { title: 'Kotlin Developer', issuer: 'Jetbrains' },
-    { title: 'Prompt Engineer', issuer: 'ChatGPT' }
+    
   ];
 
   return (

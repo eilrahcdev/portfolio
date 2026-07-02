@@ -26,7 +26,7 @@ export default function SocialLinks({ darkMode }) {
     { 
       icon: Instagram, 
       label: 'Instagram', 
-      url: 'https://www.instagram.com/rahc.mrtnz/'
+      url: 'https://www.instagram.com/rahc.mrtnz'
     }
   ];
 

@@ -39,7 +39,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
               <p className={`text-sm sm:text-base transition-colors ${
                 darkMode ? 'text-gray-300' : 'text-neutral-700'
               }`}>
-                BSIT Student - Business Informatics Major
+                BSIT Student - Major in Business Informatics
               </p>
             </div>
             

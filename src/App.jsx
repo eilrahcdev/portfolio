@@ -7,6 +7,7 @@ import BeyondCoding from './components/BeyondCoding';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import SocialLinks from './components/SocialLinks';
+import PortfolioChatbot from './components/Chatbot';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,6 +60,7 @@ export default function App() {
             <Experience darkMode={darkMode} />
             <Projects darkMode={darkMode} />
             <SocialLinks darkMode={darkMode} />
+            <PortfolioChatbot darkMode={darkMode} />
           </div>
         </div>
 

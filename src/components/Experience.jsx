@@ -9,12 +9,12 @@ export default function Experience({ darkMode }) {
       active: true,
     },
     {
-      title: "Freelance Mobile Developer & UI/UX",
-      year: "2025",
+      title: "Freelance Software Developer",
+      year: "2025 - Present",
       active: false,
     },
     {
-      title: "Hello World! 👋",
+      title: "Hello World!",
       company: "Wrote my first line of code",
       year: "2023",
       active: false,

@@ -4,7 +4,8 @@ export default function TechStack({ darkMode }) {
   const techStacks = {
     Frontend: ['JavaScript', 'HTML', 'CSS', 'Kotlin', 'React', 'Flutter'],
     Backend: ['Node.js', 'PHP', 'Laravel', 'MySQL', 'MongoDB'],
-    'UI / UX Design': ['Figma', 'Canva']
+    'UI / UX Design': ['Figma', 'Canva'],
+    'Developer Tools': ['VS Code', 'Git', 'Android Studio', 'PyCharm', 'Postman', 'JIRA']
   };
 
   return (
@@ -34,10 +35,10 @@ export default function TechStack({ darkMode }) {
               {technologies.map(tech => (
                 <span
                   key={tech}
-                  className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
+                  className={`px-3 py-1.5 rounded-lg text-sm transition-all cursor-pointer border ${
                     darkMode 
-                      ? 'bg-purple-900/40 text-purple-200' 
-                      : 'bg-gray-100 text-gray-700'
+                      ? 'bg-purple-900/40 text-purple-200 border-purple-700/30 hover:border-purple-300' 
+                      : 'bg-white text-gray-700 border-gray-200 hover:border-purple-400'
                   }`}
                 >
                   {tech}
