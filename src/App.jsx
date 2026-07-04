@@ -3,11 +3,9 @@ import Header from './components/Header';
 import About from './components/About';
 import TechStack from './components/TechStack';
 import Certifications from './components/Certifications';
-import BeyondCoding from './components/BeyondCoding';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import SocialLinks from './components/SocialLinks';
-import PortfolioChatbot from './components/Chatbot';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,7 +40,6 @@ export default function App() {
             <About darkMode={darkMode} />
             <TechStack darkMode={darkMode} />
             <Certifications darkMode={darkMode} />
-            <BeyondCoding darkMode={darkMode} />
           </div>
 
           {/* Right Column */}
@@ -52,15 +49,14 @@ export default function App() {
               darkMode ? 'bg-[#2d1b4e]' : 'bg-white'
             }`}>
               <img 
-                src="src/assets/choso.png" 
+                src="src/assets/pix choso.png" 
                 alt="Banner"
-                className="w-full h-24 sm:h-40 object-cover"
+                className="w-full h-24 sm:h-25 object-cover"
               />
             </div>
             <Experience darkMode={darkMode} />
             <Projects darkMode={darkMode} />
             <SocialLinks darkMode={darkMode} />
-            <PortfolioChatbot darkMode={darkMode} />
           </div>
         </div>
 

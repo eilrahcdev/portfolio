@@ -26,7 +26,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                 <MapPin className="w-4 h-4 mr-1" />
                 <span className="text-sm">Pangasinan, Philippines</span>
               </div>
-              <p className={`text-sm sm:text-base transition-colors ${
+              <p className={`text-base sm:text-lg font-semibold transition-colors ${
                 darkMode ? 'text-gray-300' : 'text-neutral-700'
               }`}>
                 Software Developer / Aspiring Data Analyst

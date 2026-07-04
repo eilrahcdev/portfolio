@@ -20,19 +20,21 @@ export default function About({ darkMode }) {
         darkMode ? 'text-gray-300' : 'text-gray-700'
       }`}>
         <p>
-          I'm a software developer focused on building dynamic, responsive, and user-friendly applications.
-          I work with modern tools and frameworks to create reliable solutions across web, mobile, and
-          backend systems, ensuring smooth performance and thoughtful user experiences.
+          I'm a software developer who enjoys building clean, reliable, and user-focused applications.
+          I work with modern tools and frameworks to create solutions that feel polished, perform well,
+          and solve real problems across the web.
         </p>
         <p>
-          I also design intuitive interfaces—from initial wireframes to polished prototypes—combining
-          creativity and functionality to produce designs that look great and feel effortless to use. 
-          Whether it's a website or a mobile app, I aim to create experiences that truly connect with users.
+          Alongside development, I’m growing my skills in data analytics and data visualization so I can
+          turn raw data into actionable insights that support better decisions.
         </p>
         <p>
-          Recently, I've been expanding my work by taking on more project management responsibilities, helping
-          teams stay aligned and ensuring projects are delivered efficiently. I prioritize clear communication, 
-          collaboration, and creating solutions that support real business goals.
+          I’m currently learning system development, data analytics, and data visualization, and I’m open to
+          freelance projects, internships, and collaborative opportunities where I can keep building.
+        </p>
+        <p>
+          My strengths include full-stack development, API integration, problem solving, and data analysis,
+          with a goal of building solutions that are both technically solid and data-informed.
         </p>
       </div>
     </div>

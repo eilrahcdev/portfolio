@@ -1,12 +1,44 @@
 import { Code } from "lucide-react";
+import { 
+  FaCss3Alt,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaJs,
+  FaReact,
+} from "react-icons/fa";
+import {
+  SiExpress,
+  SiKotlin,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPython,
+  SiTailwindcss,
+  SiVercel,
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export default function TechStack({ darkMode }) {
-  const techStacks = {
-    Frontend: ['JavaScript', 'HTML', 'CSS', 'Kotlin', 'React', 'Flutter'],
-    Backend: ['Node.js', 'PHP', 'Laravel', 'MySQL', 'MongoDB'],
-    'UI / UX Design': ['Figma', 'Canva'],
-    'Developer Tools': ['VS Code', 'Git', 'Android Studio', 'PyCharm', 'Postman', 'JIRA']
-  };
+  const techStack = [
+    { label: "JavaScript", Icon: FaJs, color: "#F7DF1E" },
+    { label: "Kotlin", Icon: SiKotlin, color: "#7F52FF" },
+    { label: "Python", Icon: SiPython, color: "#3776AB" },
+    { label: "HTML", Icon: FaHtml5, color: "#E34F26" },
+    { label: "CSS", Icon: FaCss3Alt, color: "#1572B6" },
+    { label: "React", Icon: FaReact, color: "#61DAFB" },
+    { label: "Next.js", Icon: SiNextdotjs, color: darkMode ? "#FFFFFF" : "#111111" },
+    { label: "Tailwind CSS", Icon: SiTailwindcss, color: "#06B6D4" },
+    { label: "Node.js", Icon: SiNodedotjs, color: "#339933" },
+    { label: "Express", Icon: SiExpress, color: darkMode ? "#F3F4F6" : "#111111" },
+    { label: "MongoDB", Icon: SiMongodb, color: "#47A248" },
+    { label: "MySQL", Icon: SiMysql, color: "#4479A1" },
+    { label: "Git", Icon: FaGitAlt, color: "#F05032" },
+    { label: "GitHub", Icon: FaGithub, color: darkMode ? "#F3F4F6" : "#181717" },
+    { label: "VS Code", Icon: VscVscode, color: "#007ACC" },
+    { label: "Vercel", Icon: SiVercel, color: darkMode ? "#F3F4F6" : "#111111" },
+  ];
 
   return (
     <div className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm transition-colors ${
@@ -23,28 +55,22 @@ export default function TechStack({ darkMode }) {
         </h2>
       </div>
 
-      <div className="space-y-4 sm:space-y-6">
-        {Object.entries(techStacks).map(([category, technologies]) => (
-          <div key={category}>
-            <h3 className={`font-semibold mb-3 text-sm sm:text-base transition-colors ${
-              darkMode ? 'text-gray-200' : 'text-gray-900'
-            }`}>
-              {category}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {technologies.map(tech => (
-                <span
-                  key={tech}
-                  className={`px-3 py-1.5 rounded-lg text-sm transition-all cursor-pointer border ${
-                    darkMode 
-                      ? 'bg-purple-900/40 text-purple-200 border-purple-700/30 hover:border-purple-300' 
-                      : 'bg-white text-gray-700 border-gray-200 hover:border-purple-400'
-                  }`}
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+      <div className="grid grid-cols-4 sm:grid-cols-6 gap-2.5 sm:gap-3">
+        {techStack.map(({ label, Icon, color }) => (
+          <div
+            key={label}
+            title={label}
+            aria-label={label}
+            className={`group flex aspect-square items-center justify-center rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm ${
+              darkMode
+                ? 'bg-purple-900/25 hover:bg-purple-900/35'
+                : 'bg-gray-50 hover:bg-white'
+            }`}
+          >
+            <Icon
+              className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200 group-hover:scale-110"
+              style={{ color }}
+            />
           </div>
         ))}
       </div>
