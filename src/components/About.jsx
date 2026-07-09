@@ -2,21 +2,21 @@ import { Info } from "lucide-react";
 
 export default function About({ darkMode }) {
   return (
-    <div className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm transition-colors ${
+    <div className={`portfolio-card ui-micro-lift rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm transition-colors min-w-0 ${
       darkMode ? 'bg-[#2d1b4e]' : 'bg-white'
     }`}>
-      <div className="flex items-center gap-2 mb-4 sm:mb-6">
-        <Info className={`w-5 h-5 transition-colors ${
+      <div className="portfolio-section-heading flex items-center gap-2 mb-4 sm:mb-6">
+        <Info className={`portfolio-section-icon ui-micro-icon w-5 h-5 transition-colors ${
           darkMode ? 'text-purple-400' : 'text-purple-600'
         }`} />
-        <h2 className={`text-lg sm:text-xl font-bold transition-colors ${
+        <h2 className={`portfolio-section-title text-lg sm:text-xl font-bold transition-colors ${
           darkMode ? 'text-white' : 'text-gray-900'
         }`}>
           About
         </h2>
       </div>
 
-      <div className={`space-y-4 leading-relaxed text-sm sm:text-base transition-colors ${
+      <div className={`portfolio-copy space-y-3 sm:space-y-4 leading-relaxed text-sm sm:text-base transition-colors min-w-0 ${
         darkMode ? 'text-gray-300' : 'text-gray-700'
       }`}>
         <p>

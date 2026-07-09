@@ -1,7 +1,6 @@
 import { Code } from "lucide-react";
 import { 
   FaCss3Alt,
-  FaGitAlt,
   FaGithub,
   FaHtml5,
   FaJs,
@@ -34,45 +33,52 @@ export default function TechStack({ darkMode }) {
     { label: "Express", Icon: SiExpress, color: darkMode ? "#F3F4F6" : "#111111" },
     { label: "MongoDB", Icon: SiMongodb, color: "#47A248" },
     { label: "MySQL", Icon: SiMysql, color: "#4479A1" },
-    { label: "Git", Icon: FaGitAlt, color: "#F05032" },
     { label: "GitHub", Icon: FaGithub, color: darkMode ? "#F3F4F6" : "#181717" },
     { label: "VS Code", Icon: VscVscode, color: "#007ACC" },
     { label: "Vercel", Icon: SiVercel, color: darkMode ? "#F3F4F6" : "#111111" },
   ];
 
   return (
-    <div className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm transition-colors ${
+    <div className={`portfolio-card ui-micro-lift rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm transition-colors min-w-0 ${
       darkMode ? 'bg-[#2d1b4e]' : 'bg-white'
     }`}>
-      <div className="flex items-center gap-2 mb-4 sm:mb-6">
-        <Code className={`w-5 h-5 transition-colors ${
+      <div className="portfolio-section-heading flex items-center gap-2 mb-4 sm:mb-6">
+        <Code className={`portfolio-section-icon ui-micro-icon w-5 h-5 transition-colors ${
           darkMode ? 'text-purple-400' : 'text-purple-600'
         }`} />
-        <h2 className={`text-lg sm:text-xl font-bold transition-colors ${
+        <h2 className={`portfolio-section-title text-lg sm:text-xl font-bold transition-colors ${
           darkMode ? 'text-white' : 'text-gray-900'
         }`}>
           Tech Stack
         </h2>
       </div>
 
-      <div className="grid grid-cols-4 sm:grid-cols-6 gap-2.5 sm:gap-3">
-        {techStack.map(({ label, Icon, color }) => (
-          <div
-            key={label}
-            title={label}
-            aria-label={label}
-            className={`group flex aspect-square items-center justify-center rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm ${
-              darkMode
-                ? 'bg-purple-900/25 hover:bg-purple-900/35'
-                : 'bg-gray-50 hover:bg-white'
-            }`}
-          >
-            <Icon
-              className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200 group-hover:scale-110"
-              style={{ color }}
-            />
-          </div>
-        ))}
+      <div className="portfolio-tech-grid grid grid-cols-5 sm:grid-cols-6 gap-2 sm:gap-3">
+        {techStack.map((tech) => {
+          const TechIcon = tech.Icon;
+
+          return (
+            <div
+              key={tech.label}
+              className="tech-stack-drift aspect-square min-w-0"
+            >
+              <div
+                title={tech.label}
+                aria-label={tech.label}
+                className={`ui-micro-lift group flex h-full w-full items-center justify-center rounded-md transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm min-w-0 ${
+                  darkMode
+                    ? 'bg-purple-900/25 hover:bg-purple-900/35'
+                    : 'bg-gray-50 hover:bg-white'
+                }`}
+              >
+                <TechIcon
+                  className="portfolio-tech-icon ui-micro-icon h-6 w-6 sm:h-7 sm:w-7 transition-transform duration-200 group-hover:scale-110"
+                  style={{ color: tech.color }}
+                />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
