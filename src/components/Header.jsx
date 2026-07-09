@@ -9,24 +9,24 @@ export default function Header({ darkMode, toggleDarkMode }) {
       <div className="flex h-full items-center justify-between gap-[clamp(0.75rem,2vw,2rem)] min-w-0">
 
         {/* Header Info */}
-        <div className="flex-1 min-w-0">
-          <div className="text-left">
+        <div className="flex flex-1 justify-start min-w-0">
+          <div className="portfolio-header-info text-left min-w-0">
               <h1 className={`text-[clamp(1.35rem,3vw,1.875rem)] font-bold mb-[clamp(0.35rem,0.8vw,0.5rem)] leading-tight transition-colors ${
                 darkMode ? 'text-white' : 'text-black'
               }`}>
                 Charlie Martinez
               </h1>
-              <div className={`flex items-center mb-1 transition-colors text-[clamp(0.72rem,1.2vw,0.95rem)] min-w-0 ${
+              <p className={`mb-1 text-[clamp(0.78rem,1.45vw,1.125rem)] font-semibold leading-snug transition-colors ${
+                darkMode ? 'text-gray-300' : 'text-neutral-700'
+              }`}>
+                Software Developer / Aspiring Data Analyst
+              </p>
+              <div className={`portfolio-header-location flex items-center justify-start transition-colors text-[clamp(0.72rem,1.2vw,0.95rem)] min-w-0 ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
                 <MapPin className="ui-micro-icon h-[clamp(0.85rem,1.3vw,1rem)] w-[clamp(0.85rem,1.3vw,1rem)] mr-1 shrink-0" />
                 <span className="min-w-0 truncate">Pangasinan, Philippines</span>
               </div>
-              <p className={`text-[clamp(0.78rem,1.45vw,1.125rem)] font-semibold leading-snug transition-colors ${
-                darkMode ? 'text-gray-300' : 'text-neutral-700'
-              }`}>
-                Software Developer / Aspiring Data Analyst
-              </p>
             </div>
         </div>
 

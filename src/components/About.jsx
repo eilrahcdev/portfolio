@@ -25,12 +25,12 @@ export default function About({ darkMode }) {
           and solve real problems across the web.
         </p>
         <p>
-          Alongside development, I’m growing my skills in data analytics and data visualization so I can
+          Alongside software development, I’m enhancing my skills in data analysis so I can
           turn raw data into actionable insights that support better decisions.
         </p>
         <p>
-          I’m currently learning system development, data analytics, and data visualization, and I’m open to
-          freelance projects, internships, and collaborative opportunities where I can keep building.
+          I’m currently learning system development, data analysis, and I’m open to freelance projects, 
+          internships, and collaborative opportunities where I can keep learning.
         </p>
         <p>
           My strengths include full-stack development, API integration, problem solving, and data analysis,

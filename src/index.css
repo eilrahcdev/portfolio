@@ -220,22 +220,22 @@
 @keyframes tech-stack-drift-up {
   0%,
   100% {
-    transform: translateY(8px) translateZ(0);
+    transform: translateY(4px) translateZ(0);
   }
 
   50% {
-    transform: translateY(-10px) translateZ(0);
+    transform: translateY(-5px) translateZ(0);
   }
 }
 
 @keyframes tech-stack-drift-down {
   0%,
   100% {
-    transform: translateY(-8px) translateZ(0);
+    transform: translateY(-4px) translateZ(0);
   }
 
   50% {
-    transform: translateY(10px) translateZ(0);
+    transform: translateY(5px) translateZ(0);
   }
 }
 
@@ -391,6 +391,12 @@
   gap: clamp(0.5rem, 1.15vw, 1.25rem);
 }
 
+.portfolio-tech-grid {
+  column-gap: clamp(0.5rem, 1.15vw, 1.25rem);
+  row-gap: clamp(0.85rem, 1.8vw, 1.65rem);
+  padding-block: clamp(0.2rem, 0.5vw, 0.45rem);
+}
+
 .portfolio-tech-icon {
   height: clamp(1.15rem, 2vw, 1.75rem);
   width: clamp(1.15rem, 2vw, 1.75rem);
@@ -446,9 +452,8 @@
     height: 100%;
   }
 
-  .portfolio-certifications,
-  .portfolio-social {
-    margin-top: auto;
+  .portfolio-banner-image {
+    height: clamp(8rem, 8.80vw, 10rem);
   }
 }
 
@@ -534,7 +539,7 @@ h1 {
   }
 
   .portfolio-header > div {
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     width: 100%;
   }
@@ -542,15 +547,15 @@ h1 {
   .portfolio-header > div > div:first-child {
     flex: 0 1 auto;
     max-width: calc(100% - 3.5rem);
-    text-align: center;
+    text-align: left;
   }
 
-  .portfolio-header .text-left {
-    text-align: center;
+  .portfolio-header-info {
+    text-align: left;
   }
 
-  .portfolio-header .text-left > div {
-    justify-content: center;
+  .portfolio-header-location {
+    justify-content: flex-start;
   }
 
   .portfolio-header button {
