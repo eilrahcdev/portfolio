@@ -20,21 +20,13 @@ export default function About({ darkMode }) {
         darkMode ? 'text-gray-300' : 'text-gray-700'
       }`}>
         <p>
-          I'm a software developer who enjoys building clean, reliable, and user-focused applications.
-          I work with modern tools and frameworks to create solutions that feel polished, perform well,
-          and solve real problems across the web.
+          I'm a software developer passionate about building clean, reliable, and user-focused applications that deliver meaningful experiences. I enjoy transforming ideas into functional solutions using modern technologies, with a strong focus on performance, usability, and maintainable code.
         </p>
         <p>
-          Alongside software development, I’m enhancing my skills in data analysis so I can
-          turn raw data into actionable insights that support better decisions.
+          Alongside software development, I'm expanding my skills in data analysis to turn data into meaningful insights that support better decision-making. I'm continuously learning and exploring new technologies while seeking opportunities to grow through internships, freelance projects, and collaborative work.
         </p>
         <p>
-          I’m currently learning system development, data analysis, and I’m open to freelance projects, 
-          internships, and collaborative opportunities where I can keep learning.
-        </p>
-        <p>
-          My strengths include full-stack development, API integration, problem solving, and data analysis,
-          with a goal of building solutions that are both technically solid and data-informed.
+          I'm open to internships, freelance opportunities, and collaborative projects where I can contribute, learn from experienced professionals, and create software that is both technically robust and driven by real user needs.
         </p>
       </div>
     </div>

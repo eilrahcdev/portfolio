@@ -453,7 +453,7 @@
   }
 
   .portfolio-banner-image {
-    height: clamp(8rem, 8.80vw, 10rem);
+    height: clamp(5rem, 8vw, 6rem);
   }
 }
 
